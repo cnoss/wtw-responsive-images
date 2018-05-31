@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>WBA1 Challenge // Web Development for Rookies</title>
+
+    <!-- Normalize und Milligram Framework -->
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="lib/milligram/dist/milligram.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/010-resets.css">
+    <link rel="stylesheet" href="styles/020-base.css">
+    <link rel="stylesheet" href="styles/030-typography.css">
+    <link rel="stylesheet" href="styles/040-layout.css">
+    <link rel="stylesheet" href="styles/050-components.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Toolbox :) -->
+    <!--
+        linear-gradient(to right, rgba(0,0,0, 0.8), rgba(255, 255, 255, 0))
+
+    -->
+
+</head>
+
+<body>
+    <header class="site-header">
+
+        <section class="site-header__content content">
+
+            <h1 class="title">Responsive Images</h1>
+            <h2 class="subtitle">Wie gehen wir mit responsiven Card- und Teaserbildern um?</h2>
+
+            <a href="#main-content" class="no-button site-header__launch-button js-scrollto">
+                <i class="material-icons md-48 md-light">keyboard_arrow_down</i>
+            </a>
+        </section>
+    </header>
+
+    <main id="main-content">
+        <section class="section content">
+            <p class="is-big">Bilder sind eine tolle Sache und auf nahezu jeder Website werden sie zum erklären, illustrieren oder Stimmung
+                erzeugen genutzt. Mit dem Aufkommen von reaktionsfähigen Layouts und unterschiedlichsten (mobilen) Endgeräten sind die Anforderung an die Darstellung
+                und das Ladeverhalten von Bildern extrem gestiegen. Auch der funktionale Kontext eines Bildes hat immensen
+                Einfluß auf die Implementierung: </p>
+            <ul class="is-big">
+                <li>wird das Bild vom Text umflossen?</li>
+                <li>ist das Bild Teil einer Slideshow?</li>
+                <li>sollen zum Bild auch Bildunterschriften angezeigt werden?</li>
+                <li>ist das Bild ein Element eines Card Layouts?</li>
+                <li>ist das Bild Content oder eher Dekoration?</li>
+                <li>wie sollen Suchmaschinen das Bild behandeln?</li>
+            </ul>
+
+        </section>
+
+        <section class="section content">
+            <header class="section__header">
+                <h2>
+                    <i class="material-icons md-24 ">burst_mode</i> Bilder in Teasern und Cards</h2>
+            </header>
+            <div class="section__content">
+                <p>Nicht erst mit Googles Material Design spielen
+                    <a href="https://material.io/design/components/cards.html">Cards</a> eine wichtige Rolle im Web-Design. Aber Material Design hat die Relevanz und Darstellungsqualität von Cards nochmals erhöht. In dieser Challenge suchen wir Lösungen für einen sinnvollen Einsatz von Bildern in Cards. Zentrale Frage dabei ist: wie lassen sich hier Bilder so einsetzen, dass sie:</p>
+
+                <ul>
+                    <li>auf verschiedenen Devices in ausreichend guter Qualität angezeigt werden</li>
+                    <li>das die Bilder in einer angemessenen Dateigröße angefragt werden</li>
+                    <li>das die Bilder als Teil des Contents gesehen werden, so dass Suchmaschinen die Bilder finden können.</li>
+                </ul>
+
+                <ul class="teaser-list grid grid-is-2 ">
+                    <li class="teaser-list__item" style="background-image:url(https://loremflickr.com/500/500/dog)">
+
+
+                        <h3 class="item-content">Ut enim ad minim.</h3>
+                        <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+
+                    </li>
+                    <li class="teaser-list__item" style=" background-image:url(https://loremflickr.com/500/500/cat) ">
+                        <h3 class="item-content ">Dolor Sit Amet Con</h3>
+                        <p class="item-content ">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.</p>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="section content">
+            <header class="section__header">
+                <h2>
+                    <i class="material-icons md-24 ">burst_mode</i> Bilder in Cards</h2>
+            </header>
+            <div class="section__content">
+                <ul class="teaser-list grid grid-is-3 ">
+                    <div class="card">
+                        <div class="card__head" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sir_Tim_Berners-Lee.jpg/1024px-Sir_Tim_Berners-Lee.jpg)" alt="Tim Berners Lee" >
+                        </div>
+                        <div class="card__content">
+                            <h4>Tim Berners Lee</h4> 
+                            <p>Sir Timothy John Berners-Lee, OM, KBE, FRS, FRSA ist ein britischer Physiker und Informatiker. Er ist der Erfinder von HTML und der Begründer des World Wide Web. </p> 
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__head" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Bill_Gates_World_Economic_Forum_2013.jpg/1024px-Bill_Gates_World_Economic_Forum_2013.jpg" alt="Bill Gates">
+                        </div>
+                        <div class="card__content">
+                            <h4>Bill Gates</h4> 
+                            <p>William „Bill“ Henry Gates III, KBE ist ein US-amerikanischer Unternehmer, Programmierer und Mäzen. Er gilt mit einem geschätzten Vermögen von 90 Mrd. US-Dollar als der zweitreichste Mensch der Welt nach Jeff Bezos.</p> 
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__head" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/George_Lucas.jpg/1024px-George_Lucas.jpg" alt="George Lucas">
+                        </div>
+                        <div class="card__content">
+                            <h4>George Lucas</h4> 
+                            <p>George Walton Lucas Jr. ist ein US-amerikanischer Produzent, Drehbuchautor und Regisseur. Seine erfolgreichsten Filmprojekte waren vor allem die Star-Wars-Filmreihe und die Indiana-Jones-Tetralogie.</p> 
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section content">
+            <header class="section__header">
+                <h2>
+                <i class="material-icons md-24 ">receipt</i> Challenge</h2>
+            </header>
+            <div class="section__content">
+                <p>Für Bilder die via <code>img</code> Elemente gibt es bereits [gute Implementierungsmöglichkeiten](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images). Häufig werden Bilder aber auch via <code>background-image</code> eingebunden. Teilweise weil sie wirklich Hintergrundbilder mit eher atmosphärischen Charakter sind, teilweise aber auch, weil sich bestimmte Eigenschaften mit Hintergrundbildern besser implementieren lassen.</p>
+
+                <p>Die Frage für die Challenge lautet: <strong>wie lassen sich Bilder Hintergrundbilder reaktionsfähig, bezogen auf Darstellung und Dateigröße, implementieren?</strong></p>
+
+                <p>Erstellen Sie dazu bitte ein Repo oder eine <a href="https://github.com/th-koeln/mi-master-wtw/wiki">Wikiseite</a> mit Folgenden Bausteinen:</p>
+
+                <ul>
+                    <li>State of the Art in dieser Fragestellung</li>
+                    <li>Etwaige zukünftige Features/ Standards des W3C</li>
+                    <li>Eine Abwägung der bisherigen Implementierungsansätze</li>
+                    <li>ggf. ein oder mehrere eigene Implementierungsansätze</li>
+                </ul>
+
+                <p>Bitte setzen Sie zu Bearbeitung maximal 24 Stunden Workload ein.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer ">
+        <section class="section content ">
+            <h3>Für diese Seite wurden die folgenden Tools, Frameworks und Ressourcen genutzt:</h3>
+            <li>Farbpaletten mit
+                <a href="https://color.adobe.com/ ">Adobe Color CC</a>
+            </li>
+            <li>Icons von
+                <a href="https://material.io/icons/ ">Material Design</a>
+            </li>
+            <li>CSS Framework
+                <a href="https://milligram.io/ ">Milligram</a>
+            </li>
+        </section>
+    </footer>
+
+</body>
+<script src="scripts/eyecandy-scrolling.js "></script>
+
+</html>

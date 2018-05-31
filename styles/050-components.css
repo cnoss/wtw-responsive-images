@@ -1,0 +1,116 @@
+/* ----------------------------------------------------------------------------
+components.css                                                                  
+Enthält alle Regeln zu Komponenten.  
+
+Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
+----------------------------------------------------------------------------*/
+
+/* Site Header
+-----------------------------------------------------------------------------*/
+
+.site-header {
+    margin-bottom: var(--space-stack-xxl);
+    height: 99vh;
+    background-color: var(--color-mi-lila);
+    /* zur Zentrierung des Contents */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Damit der Button unten und zentriert sitzt */
+    position: relative;
+}
+
+.site-header__content {
+    flex: 1;
+    text-align: center;
+}
+
+.site-header__content .title {
+    color: #fff;
+}
+
+.site-header__content .subtitle {
+    font-size: var(--fontsize-l);
+    color: #fff;
+}
+
+.site-header__launch-button {
+    background-color: var(--color-mi-lila);
+    border: none;
+    position: absolute;
+    padding-bottom: var(--space-stack-xxl);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+/* Teaser List
+-----------------------------------------------------------------------------*/
+
+.teaser-list__item {
+    display: block;
+    position: relative;
+    background-color: var(--color-backgrounds);
+    padding: var(--space-inset-xl);
+    border-left: var(--space-inline-xs) solid var(--color-mi-pink);
+    padding-bottom: 3em;
+}
+
+.teaser-list__item .item-content {
+    display: block;
+    position: relative;
+    z-index: 100;
+    color: #fff;
+    line-height: 140%;
+}
+
+.teaser-list__item:before {
+    content: "";
+    background-size: auto;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    background-repeat: no-repeat;
+    opacity: .9;
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* Cards
+-----------------------------------------------------------------------------*/
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-bottom: 2em;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card__content {
+    padding: 1em 1em;
+    font-size: 1.5rem;
+}
+
+.card__head {
+    background-size: cover;
+    padding-top: 75%;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+    margin-top: var(--space-stack-xxl);
+    padding-top: var(--space-stack-xl);
+    padding-bottom: var(--space-stack-xxl);
+    background-color: var(--color-backgrounds);
+    border-top: solid 1px var(--color-mi-lila);
+}
